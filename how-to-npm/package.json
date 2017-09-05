@@ -1,0 +1,26 @@
+{
+  "name": "@carloscurotto/how-to-npm",
+  "version": "1.0.5",
+  "description": "Learning about npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "author": "carloscurotto",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carloscurotto/how-to-npm.git"
+  },
+  "keywords": [
+    "how",
+    "to",
+    "npm"
+  ],
+  "bugs": {
+    "url": "https://github.com/carloscurotto/how-to-npm/issues"
+  },
+  "homepage": "https://github.com/carloscurotto/how-to-npm#readme"
+}

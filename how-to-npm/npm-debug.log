@@ -1,0 +1,136 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/6.8.1/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'publish',
+1 verbose cli   '@carloscurotto/how-to-npm' ]
+2 info using npm@3.10.9
+3 info using node@v6.8.1
+4 verbose publish [ '@carloscurotto/how-to-npm' ]
+5 silly cache add args [ '@carloscurotto/how-to-npm', null ]
+6 verbose cache add spec @carloscurotto/how-to-npm
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '@carloscurotto/how-to-npm',
+7 silly cache add   scope: '@carloscurotto',
+7 silly cache add   escapedName: '@carloscurotto%2fhow-to-npm',
+7 silly cache add   name: '@carloscurotto/how-to-npm',
+7 silly cache add   rawSpec: '',
+7 silly cache add   spec: 'latest',
+7 silly cache add   type: 'tag' }
+8 silly addNamed @carloscurotto/how-to-npm@latest
+9 verbose addNamed "latest" is being treated as a dist-tag for @carloscurotto/how-to-npm
+10 info addNameTag [ '@carloscurotto/how-to-npm', 'latest' ]
+11 silly mapToRegistry name @carloscurotto/how-to-npm
+12 silly mapToRegistry scope (from package name) @carloscurotto
+13 verbose mapToRegistry no registry URL found in name for scope @carloscurotto
+14 silly mapToRegistry using default registry
+15 silly mapToRegistry registry http://localhost:15443/
+16 silly mapToRegistry data Result {
+16 silly mapToRegistry   raw: '@carloscurotto/how-to-npm',
+16 silly mapToRegistry   scope: '@carloscurotto',
+16 silly mapToRegistry   escapedName: '@carloscurotto%2fhow-to-npm',
+16 silly mapToRegistry   name: '@carloscurotto/how-to-npm',
+16 silly mapToRegistry   rawSpec: '',
+16 silly mapToRegistry   spec: 'latest',
+16 silly mapToRegistry   type: 'tag' }
+17 silly mapToRegistry uri http://localhost:15443/@carloscurotto%2fhow-to-npm
+18 verbose addNameTag registry:http://localhost:15443/@carloscurotto%2fhow-to-npm not in flight; fetching
+19 verbose request uri http://localhost:15443/@carloscurotto%2fhow-to-npm
+20 verbose request no auth needed
+21 info attempt registry request try #1 at 11:50:38 AM
+22 verbose request id bec5b135512f8f27
+23 http request GET http://localhost:15443/@carloscurotto%2fhow-to-npm
+24 http 200 http://localhost:15443/@carloscurotto%2fhow-to-npm
+25 verbose headers { 'content-length': '3535',
+25 verbose headers   'content-type': 'application/json',
+25 verbose headers   connection: 'close',
+25 verbose headers   date: 'Sat, 05 Nov 2016 14:50:38 GMT' }
+26 silly get cb [ 200,
+26 silly get   { 'content-length': '3535',
+26 silly get     'content-type': 'application/json',
+26 silly get     connection: 'close',
+26 silly get     date: 'Sat, 05 Nov 2016 14:50:38 GMT' } ]
+27 verbose get saving @carloscurotto/how-to-npm to /Users/carloscurotto/.npm/localhost_15443/_40carloscurotto_252fhow-to-npm/.cache.json
+28 verbose correctMkdir /Users/carloscurotto/.npm correctMkdir not in flight; initializing
+29 silly addNameTag next cb for @carloscurotto/how-to-npm with tag latest
+30 silly addNamed @carloscurotto/how-to-npm@1.0.2
+31 verbose addNamed "1.0.2" is a plain semver version for @carloscurotto/how-to-npm
+32 silly cache afterAdd @carloscurotto/how-to-npm@1.0.2
+33 verbose afterAdd /Users/carloscurotto/.npm/@carloscurotto/how-to-npm/1.0.2/package/package.json not in flight; writing
+34 verbose correctMkdir /Users/carloscurotto/.npm correctMkdir not in flight; initializing
+35 verbose afterAdd /Users/carloscurotto/.npm/@carloscurotto/how-to-npm/1.0.2/package/package.json written
+36 silly publish { name: '@carloscurotto/how-to-npm',
+36 silly publish   version: '1.0.2',
+36 silly publish   description: 'Learning about npm',
+36 silly publish   main: 'index.js',
+36 silly publish   scripts: { test: 'node test.js' },
+36 silly publish   author: { name: 'carloscurotto' },
+36 silly publish   license: 'ISC',
+36 silly publish   dependencies: { '@linclark/pkg': '^1.0.2' },
+36 silly publish   devDependencies: {},
+36 silly publish   repository:
+36 silly publish    { type: 'git',
+36 silly publish      url: 'git+https://github.com/carloscurotto/how-to-npm.git' },
+36 silly publish   keywords: [ 'how', 'to', 'npm' ],
+36 silly publish   bugs: { url: 'https://github.com/carloscurotto/how-to-npm/issues' },
+36 silly publish   homepage: 'https://github.com/carloscurotto/how-to-npm#readme',
+36 silly publish   readme: 'Learning about npm\n',
+36 silly publish   readmeFilename: 'README.md',
+36 silly publish   _id: '@carloscurotto/how-to-npm@1.0.2',
+36 silly publish   _shasum: '4aa3e11e1b030e45f71e03253025e7ee47295aa9',
+36 silly publish   _from: '@carloscurotto/how-to-npm@latest' }
+37 info lifecycle @carloscurotto/how-to-npm@1.0.2~prepublish: @carloscurotto/how-to-npm@1.0.2
+38 silly lifecycle @carloscurotto/how-to-npm@1.0.2~prepublish: no script for prepublish, continuing
+39 verbose getPublishConfig undefined
+40 silly mapToRegistry name @carloscurotto/how-to-npm
+41 silly mapToRegistry scope (from package name) @carloscurotto
+42 verbose mapToRegistry no registry URL found in name for scope @carloscurotto
+43 silly mapToRegistry using default registry
+44 silly mapToRegistry registry http://localhost:15443/
+45 silly mapToRegistry data Result {
+45 silly mapToRegistry   raw: '@carloscurotto/how-to-npm',
+45 silly mapToRegistry   scope: '@carloscurotto',
+45 silly mapToRegistry   escapedName: '@carloscurotto%2fhow-to-npm',
+45 silly mapToRegistry   name: '@carloscurotto/how-to-npm',
+45 silly mapToRegistry   rawSpec: '',
+45 silly mapToRegistry   spec: 'latest',
+45 silly mapToRegistry   type: 'tag' }
+46 silly mapToRegistry uri http://localhost:15443/@carloscurotto%2fhow-to-npm
+47 verbose publish registryBase http://localhost:15443/
+48 silly publish uploading /Users/carloscurotto/.npm/@carloscurotto/how-to-npm/1.0.2/package.tgz
+49 verbose request uri http://localhost:15443/@carloscurotto%2fhow-to-npm
+50 verbose request sending authorization for write operation
+51 info attempt registry request try #1 at 11:50:38 AM
+52 http request PUT http://localhost:15443/@carloscurotto%2fhow-to-npm
+53 http 404 http://localhost:15443/@carloscurotto%2fhow-to-npm
+54 verbose headers { 'content-type': 'application/json',
+54 verbose headers   date: 'Sat, 05 Nov 2016 14:50:38 GMT',
+54 verbose headers   connection: 'keep-alive',
+54 verbose headers   'content-length': '19' }
+55 verbose request invalidating /Users/carloscurotto/.npm/localhost_15443/_40carloscurotto_252fhow-to-npm on PUT
+56 error publish Failed PUT 404
+57 verbose stack Error: missing : @carloscurotto/how-to-npm
+57 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+57 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+57 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+57 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:187:22)
+57 verbose stack     at emitTwo (events.js:106:13)
+57 verbose stack     at Request.emit (events.js:191:7)
+57 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1048:10)
+57 verbose stack     at emitOne (events.js:96:13)
+57 verbose stack     at Request.emit (events.js:188:7)
+57 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:969:12)
+58 verbose statusCode 404
+59 verbose pkgid @carloscurotto/how-to-npm
+60 verbose cwd /Users/carloscurotto/Documents/development/nodejs/how-to-npm
+61 error Darwin 16.0.0
+62 error argv "/usr/local/Cellar/node/6.8.1/bin/node" "/usr/local/bin/npm" "publish" "@carloscurotto/how-to-npm"
+63 error node v6.8.1
+64 error npm  v3.10.9
+65 error code E404
+66 error 404 missing : @carloscurotto/how-to-npm
+67 error 404
+68 error 404 '@carloscurotto/how-to-npm' is not in the npm registry.
+69 error 404 You should bug the author to publish it (or use the name yourself!)
+70 error 404 Note that you can also install from a
+71 error 404 tarball, folder, http url, or git url.
+72 verbose exit [ 1, true ]
