@@ -8,28 +8,34 @@ var script = DOM.script;
 var browserify = require('browserify');
 var babelify = require("babelify");
 
-var express = require('express');
-var app = express();
-
-app.set('port', (process.argv[2] || 3000));
-app.set('view engine', 'jsx');
-app.set('views', __dirname + '/views');
-app.engine('jsx', require('express-react-views').createEngine({transformViews: false}));
-
-require('babel/register');
-
+require('babel/register')({
+	ignore: false
+});
+    
 var TodoBox = require('./views/index.jsx');
 
 var data = [
-    {title: 'Shopping', detail: process.argv[3]},
-    {title: 'Hair cut', detail: process.argv[4]}
+	{title: "Shopping", detail: process.argv[3]},
+	{title: "Hair cut", detail: process.argv[4]}
 ];
 
-app.use('/bundle.js', function (req, res) {
-    res.setHeader('Content-Type', 'application/javascript');
+var express = require('express');
+var app = express();
+    
+app.set('port', (process.argv[2] || 3000));
+app.set('view engine', 'jsx');
+app.set('views', __dirname + '/views');
+app.engine('jsx', require('express-react-views').createEngine({ transformViews: false }));
 
-    browserify("./app.js")
-        .transform("babelify", {presets: ["es2015", "react"]})
+app.use('/bundle.js', function (req, res) {
+    res.setHeader('content-type', 'application/javascript');
+
+    browserify({ debug: true })
+        .transform(babelify.configure({
+            presets: ["react", "es2015"],
+            compact: false
+        }))
+        .require("./app.js", { entry: true })
         .bundle()
         .pipe(res);
 });
@@ -53,5 +59,4 @@ app.use('/', function (req, res) {
     res.end(html);
 });
 
-app.listen(app.get('port'), function () {
-});
+app.listen(app.get('port'), function() {});
